@@ -1,0 +1,70 @@
+{
+  "common": {
+    "ver": [0],
+    "plat": [17]
+  },
+  "ircut": {
+    "d2n.d2n_luma_th": [0],
+    "d2n.d2n_iso_th": [450, 550, 2000],
+    "d2n.low": [0],
+    "d2n.th": [120981],
+    "d2n.high": [100],
+    "n2d.n2d_luma_th": [15],
+    "n2d.n2d_iso_th": [3800, 9041, 20000],
+    "n2d.low": [0],
+    "n2d.ir": [6741, 7000],
+    "n2d.high": [1500],
+    "n2d.bGain": [202, 215, 240],
+    "n2d.vl": [0]
+  },
+  "audio": {
+    "ai.SampleRate": [8000, 16000],
+    "ai.NumPerFrm": [320],
+    "ai.NrLevel": [2, 3],
+    "ai.AgcTarget": [1, 2],
+    "ai.AgcMaxGain": [10, 20],
+    "ao.SampleRate": [8000, 16000],
+    "ao.NumPerFrm": [320],
+    "ao.AgcTarget": [1],
+    "ao.AgcMaxGain": [0],
+    "aec.SafeSuppression": [2],
+    "aec.TargetLevel": [2, 3],
+    "aec.CompressionGain": [18, 20],
+    "aec.FarFrm": [7],
+    "aec.NearFrm": [4],
+    "aec.DelayMs": [20]
+  },
+  "md": {
+    "low": [45],
+    "mid": [35],
+    "high": [25]
+  },
+  "pipeline": {
+    "sensor.name": ["gc8613a", "mis20c1", "mis40c1"],
+    "sensor.rst_gpio": ["GPIO_PA(17)", "GPIO_PA(20)"],
+    "sensor.i2c.addr": ["0x30", "0x31"],
+    "sensor.video_interface": [0, 1],
+    "isp.index": [0, 1],
+    "isp.ae.blc": [19, 64],
+    "isp.FrmRateDayNum": [15],
+    "isp.FrmRateDayDen": [1],
+    "isp.FrmRateNightNum": [10, 15],
+    "isp.FrmRateNightDen": [1],
+    "antiflicker.50hz.num": [25],
+    "antiflicker.50hz.den": [2],
+    "antiflicker.60hz.num": [15],
+    "antiflicker.60hz.den": [1],
+    "fs.group": [0, 1, 2, 3, 4],
+    "fs.width": [640, 1280, 2304, 2976, 3840],
+    "fs.height": [360, 720, 1296, 1696, 2160],
+    "fs.nrvbs": [2, 3],
+    "osd.func": ["ipu"],
+    "venc.func": ["h26x"],
+    "hybrid_zoom.enable": [true, false],
+    "hybrid_zoom.venc_group": [2]
+  },
+  "mapping": {
+    "dev_id": [0, 1],
+    "chn_id": [0, 1, 2]
+  }
+}

@@ -1,0 +1,1 @@
+"""MediaCfg data models."""
